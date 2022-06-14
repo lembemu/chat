@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
 @media screen and (min-width:720px){
     *{
         font-size: 12pt;
@@ -9,8 +16,9 @@
         background-color: whitesmoke;
     }
     .container{
+        position: relative;
+        margin-top: 80px;
         padding: 10px;
-        margin-top: 90px;
     }
     .container div{
         margin-top: 6px;
@@ -25,7 +33,7 @@
         position: fixed;
         top: 0;
         padding: 16px;
-        background-color: blue;
+        background-color: rgb(40, 40, 170);
         justify-content: space-between;
     }
     .header .title{
@@ -55,6 +63,9 @@
     .container .profile .profile-info{
         position: relative;
         left: 15px;
+    }
+    .container .profile .profile-info h4{
+        margin: 0;
     }
     .container .search-bar{
         border-top: 1px solid grey;
@@ -186,9 +197,10 @@
     
     }
 }
+
 @media screen and (max-width:720px){
     *{
-        font-size: 12pt;
+        font-size: 100%;
         font-family: Georgia;
     }
     body{
@@ -197,23 +209,22 @@
         background-color: whitesmoke;
     }
     .container{
+        position: relative;
+        margin-top: 0;
         padding: 10px;
-        margin-top: 90px;
     }
     .container div{
-        margin-top: 6px;
-        padding: 10px;
+        padding: 0;
         background-color: transparent;
     }
     .header{
         width: 100%;
-        margin-bottom: 12px;
+        margin-bottom: 0;
         z-index: 100;
         display: flex;
-        position: fixed;
-        top: 0;
+        position: relative;
         padding: 16px;
-        background-color: blue;
+        background-color: rgb(40, 40, 170);
         justify-content: space-between;
     }
     .header .title{
@@ -222,29 +233,34 @@
         color: white;
     }
     .header .title img{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
     }
     .header .title>h2{
         position: relative;
         left: 15px;
-        font-size: 18pt;
+        font-size: 14pt;
     }
     .container .profile{
         margin-top: 6px;
         display: flex;
+        justify-items: end;
     }
     .container .profile .profileImg>img{
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
     }
     .container .profile .profile-info{
         position: relative;
         left: 15px;
     }
+    .container .profile .profile-info h4{
+        margin: 0;
+    }
     .container .search-bar{
+        padding: 10px;
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
     }
@@ -299,15 +315,15 @@
         border-bottom: 1px solid grey;
     }
     .container .friend-info img{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
     }
     .container .friend-info .info{
         position: relative;
         padding-top: 0;
         margin-top: 0;
-        left: 30px;
+        left: 8px;
         width: 100%;
     }
     .container .friend-info span{
@@ -335,6 +351,10 @@
         font-weight: 600;
         padding: 4px;
         border-radius: 10px;
+    }
+    .container .friends-list .status{
+        display: flex;
+        flex-direction: column;
     }
     .container .friends-list .status span:last-child{
         width: 20px;

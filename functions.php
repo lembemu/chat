@@ -1,6 +1,13 @@
 <?php
 include "config.php";
 
-function login($username,$password){
-    
+$return;
+function emptyFields($field){
+    if($field == ""){
+        $return = false;
+    } else {
+        $return = true;
+    }
+
+    return $return;
 }

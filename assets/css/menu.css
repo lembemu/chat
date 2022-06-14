@@ -4,7 +4,7 @@
     background: white;
     margin: 4px;
     position: relative;
-    left: -30px;
+    left: 10px;
     bottom: -10px;
     border-radius: 10px;
     box-shadow: 12px 24px 24px 12px rgba(38, 38, 39, 0.02),12px 24px 24px 12px rgba(38, 38, 39, 0.02);
@@ -14,7 +14,7 @@
     position: absolute;
     z-index: 1;
     display: none;
-    right: 100px;
+    right: 10px;
     width: 200px;
     height: auto;
     padding: 10px;
@@ -27,7 +27,7 @@
     padding-bottom: 12px;
     display: block;
     color: blue;
-    
+    padding: 4px;
 }
 .menu-content a:hover{
     background-color: blue;
@@ -52,7 +52,7 @@
     display: block;
     position: absolute;
     color: black;
-    left: 200px;
+    right: 10px;
     top:0;
     margin-bottom: 30px;
     float: right;
